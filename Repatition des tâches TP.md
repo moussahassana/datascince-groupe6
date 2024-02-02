@@ -36,7 +36,7 @@ Nettoyer les données, gérer les valeurs manquantes et effectuer des transforma
    - *Tâche :* Implémenter la méthode `compute_mean` qui calcule la moyenne des points attribués à chaque centroïde.
    - *Résultat Attendu :* Les moyennes des points attribués à chaque centroïde sont correctement calculées.
 
-5. **Toukap Nono (Méthode `fit`) :**
+5. **Toukap Nono  et Moussa Hassana (Méthode `fit`) :**
    - *Tâche :* Implémenter la méthode `fit` qui effectue le clustering sur le jeu de données en utilisant l'algorithme K-Means.
    - *Résultat Attendu :* La méthode `fit` s'exécute correctement, et les centroïdes ainsi que l'affectation des points sont mis à jour de manière appropriée.
 
@@ -48,7 +48,7 @@ Nettoyer les données, gérer les valeurs manquantes et effectuer des transforma
    - *Tâche :* Implémenter la méthode `plot_clusters` qui trace le jeu de données clusterisé.
    - *Résultat Attendu :* Le tracé des clusters et des centroïdes est correct.
 
-8. **Steven (Méthode `elbow_method`) :**
+8. **Steven  (Méthode `elbow_method`) :**
    - *Tâche :* Implémenter la méthode `elbow_method` qui trace la courbe du coude et retourne le nombre optimal de clusters.
    - *Résultat Attendu :* La courbe du coude est correctement tracée, et le nombre optimal de clusters est retourné.
 
