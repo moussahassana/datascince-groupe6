@@ -1,25 +1,25 @@
 ## TPE DATA SCIENCE GROUPE 6
 # Groupe 6 (k-means) - Tâches et Répartition :
+<details>
+<summary> <h3 style="text-transform:uppercase;"> COMPTE RENDU DE REPARTITION DES TACHES POUR LE DE L'ALGORITHME DE K-MEANS</h3></summary>
 
-# Compte Rendu de Répartition des Tâches pour le Développement de l'Algorithme K-Means
+### Introduction
 
-## Introduction
-
-Dans le cadre de la réalisation de l'algorithme K-Means, nous avons organisé la répartition des tâches entre huit étudiants. Chaque étudiant a été assigné à une tâche spécifique pour assurer une progression logique du développement de l'algorithme. L'objectif était de couvrir toutes les étapes, de l'initialisation de la classe à l'implémentation de la méthode du coude pour déterminer le nombre optimal de clusters.
+> Dans le cadre de la réalisation de l'algorithme K-Means, nous avons organisé la répartition des tâches entre huit étudiants. Chaque étudiant a été assigné à une tâche spécifique pour assurer une progression logique du développement de l'algorithme. L'objectif était de couvrir toutes les étapes, de l'initialisation de la classe à l'implémentation de la méthode du coude pour déterminer le nombre optimal de clusters.
 
 ## Collecte des Données sur Kaggle
 
 **Membres responsables :** Tache commune
 
-Effectuer des recherches sur Kaggle pour trouver un ensemble de données pertinent dans le domaine de la santé. Les membres responsables doivent ensuite collaborer pour sélectionner un ensemble de données adéquat, le collecter, et le télécharger. Cette étape est cruciale pour garantir que l'algorithme K-Means sera appliqué sur des données significatives.
+> Effectuer des recherches sur Kaggle pour trouver un ensemble de données pertinent dans le domaine de la santé. Les membres responsables doivent ensuite collaborer pour sélectionner un ensemble de données adéquat, le collecter, et le télécharger. Cette étape est cruciale pour garantir que l'algorithme K-Means sera appliqué sur des données significatives.
 
-## Prétraitement des Données
+### Prétraitement des Données
 
 **Membres responsables :** Tache commune
 
-Nettoyer les données, gérer les valeurs manquantes et effectuer des transformations nécessaires pour préparer les données en vue du clustering. Cela comprend le traitement des outliers, la normalisation des données, et toute autre étape nécessaire pour assurer la qualité des données utilisées dans l'algorithme K-Means.
+>Nettoyer les données, gérer les valeurs manquantes et effectuer des transformations nécessaires pour préparer les données en vue du clustering. Cela comprend le traitement des outliers, la normalisation des données, et toute autre étape nécessaire pour assurer la qualité des données utilisées dans l'algorithme K-Means.
 
-## Répartition des Tâches pour le Développement de l'Algorithme K-Means
+### Répartition des Tâches pour le Développement de l'Algorithme K-Means
 
 1. **Moussa Hassana (Méthode `__init__`) :**
    - *Tâche :* Implémenter la méthode `__init__` pour initialiser la classe avec le nombre spécifié de clusters.
@@ -53,15 +53,14 @@ Nettoyer les données, gérer les valeurs manquantes et effectuer des transforma
    - *Tâche :* Implémenter la méthode `elbow_method` qui trace la courbe du coude et retourne le nombre optimal de clusters.
    - *Résultat Attendu :* La courbe du coude est correctement tracée, et le nombre optimal de clusters est retourné.
 
-## L'evalution de la performance
+### L'evalution de la performance
 **Membres responsables :** Tache commune
 
 
-## Coordination (Chef de groupe) :
+### Coordination (Chef de groupe) :
 
-Le chef de groupe sera responsable de coordonner le travail, de s'assurer que chaque membre respecte les délais et de faciliter la communication entre les sous-groupes. Gardez une trace des progrès individuels et organisez des réunions régulières pour discuter des avancées et résoudre les problèmes éventuels.
+> Le chef de groupe sera responsable de coordonner le travail, de s'assurer que chaque membre respecte les délais et de faciliter la communication entre les sous-groupes. Gardez une trace des progrès individuels et organisez des réunions régulières pour discuter des avancées et résoudre les problèmes éventuels.
 
-## Conclusion
-
-La répartition des tâches a été conçue de manière à assurer une progression logique du développement de l'algorithme K-Means. La collecte des données sur Kaggle et le prétraitement des données ont été inclus pour garantir l'utilisation d'un ensemble de données pertinent et de qualité. Chaque étudiant est responsable d'une partie spécifique du code, et l'intégration du travail sera effectuée une fois que toutes les tâches auront été complétées avec succès. Cette approche collaborative, supervisée par le chef de groupe, permettra de garantir la qualité et la cohérence de l'implémentation finale de l'algorithme K-Means.
+### Conclusion
+> La répartition des tâches a été conçue de manière à assurer une progression logique du développement de l'algorithme K-Means. La collecte des données sur Kaggle et le prétraitement des données ont été inclus pour garantir l'utilisation d'un ensemble de données pertinent et de qualité. Chaque étudiant est responsable d'une partie spécifique du code, et l'intégration du travail sera effectuée une fois que toutes les tâches auront été complétées avec succès. Cette approche collaborative, supervisée par le chef de groupe, permettra de garantir la qualité et la cohérence de l'implémentation finale de l'algorithme K-Means.</details>
 
