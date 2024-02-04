@@ -1,0 +1,71 @@
+**Nous presenterons ici la methode Elbow permettant de trouver le nombre maximal de cluster**
+
+**Voici les étapes générales de la méthode du coude :**
+
+1. *Choisir le nombre de clusters :* Commencez par sélectionner une plage de valeurs pour le nombre de clusters que vous souhaitez tester. Cela peut aller de 1 à un certain nombre maximum raisonnable.
+
+2. *Appliquer l'algorithme de clustering :* Utilisez un algorithme de clustering comme K-means pour diviser vos données en un nombre variable de clusters en fonction des valeurs que vous avez choisies à l'étape précédente.
+
+3. *Calculer la somme des carrés des distances :* Pour chaque valeur de clusters, calculez la somme des carrés des distances entre chaque point de données et le centre de son cluster. Cette mesure est souvent appelée l'inertie intra-cluster.
+
+4. *Représenter graphiquement :* Tracez un graphique montrant le nombre de clusters sur l'axe des x et l'inertie intra-cluster sur l'axe des y. Vous verrez généralement une courbe qui ressemble à un "coude".
+
+5. *Trouver le coude :* Recherchez le point où l'inertie intra-cluster commence à diminuer de manière significativement plus lente. Ce point est souvent appelé le "coude" et correspond au nombre optimal de clusters.
+
+Le choix du nombre de clusters dépend souvent de l'équilibre entre la réduction de l'inertie intra-cluster (ce que nous voulons maximiser) et la complexité du modèle (ce que nous voulons minimiser).
+
+
+
+# Importer les bibliothèques nécessaires
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.cluster import KMeans
+
+# Supposez que vous avez déjà un train_set (non-Numpy)
+# train_set = ...
+
+# Convertir le train_set en tableau NumPy
+train_set_np = np.array(train_set)
+
+# Essayer différentes valeurs de k (nombre de clusters)
+k_values = range(1, 11)
+inertia_values = []
+
+# Boucle sur différentes valeurs de k
+for k in k_values:
+    # Créer un modèle K-means avec le nombre de clusters k
+    kmeans = KMeans(n_clusters=k, random_state=42)
+    
+    # Appliquer le modèle aux données d'entraînement
+    kmeans.fit(train_set_np)
+    
+    # Stocker l'inertie intra-cluster pour cette valeur de k
+    inertia_values.append(kmeans.inertia_)
+
+# Tracé de la courbe du coude
+plt.plot(k_values, inertia_values, marker='o')
+plt.title('Méthode du Coude pour la détermination du nombre de clusters')
+plt.xlabel('Nombre de clusters (k)')
+plt.ylabel('Inertie intra-cluster')
+plt.show()
+
+
+**Import des bibliothèques :** Importe les bibliothèques nécessaires (NumPy pour les tableaux, Matplotlib pour les graphiques, et KMeans de scikit-learn pour l'algorithme K-means).
+
+**Supposition de l'existence d'un train_set :** On suppose que vous avez déjà un ensemble de données d'entraînement (non spécifié dans le code).
+
+**Conversion en tableau NumPy :** Convertit l'ensemble de données d'entraînement (train_set) en un tableau NumPy (train_set_np).
+
+**Boucle sur différentes valeurs de k :** Itère sur différentes valeurs de k (nombre de clusters) pour tester l'effet de chaque valeur sur l'inertie intra-cluster.
+
+**Création du modèle K-means :** Crée un modèle K-means avec le nombre de clusters actuel (k) et fixe la graine aléatoire avec random_state=42.
+
+**Entraînement du modèle :** Applique le modèle K-means aux données d'entraînement.
+
+**Stockage de l'inertie intra-cluster :** Stocke l'inertie intra-cluster (la somme des carrés des distances) pour cette valeur de k.
+
+**Tracé de la courbe du coude :** Utilise Matplotlib pour tracer la courbe du coude, montrant l'inertie intra-cluster en fonction du nombre de clusters.
+
+**Ajout de titres et d'étiquettes d'axe :** Ajoute des titres et des étiquettes d'axe pour rendre le graphique informatif.
+
+**Affichage du graphique :** Affiche le graphique résultant.
